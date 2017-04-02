@@ -1,0 +1,12 @@
+<h2>{{repo.name}}</h2>
+
+<div>{{repo.open_issues_count}}</div>
+
+<ul>
+  <li ng-repeat="user in repo.collaborators">
+    <img src="{{user.avatar_url}}" alt="{{user.login}}" />
+    {{user.login}}
+  </li>
+</ul>
+
+<a href="#!/user/{{searchValue}}">Back to user</a>
